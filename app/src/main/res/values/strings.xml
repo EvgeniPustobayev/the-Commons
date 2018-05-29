@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">The Commons</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="community">Community</string>
+    <string name="events">Events</string>
+    <string name="ourspace">Our Space</string>
+    <string name="text_inside_circle_button_text_normal">normal_text</string>
+    <string name="text_outside_circle_button_text_normal">Outside_normal</string>
+    <string name="text_ham_button_text_normal">ham_text</string>
+    <string name="text_ham_button_sub_text_normal">ham_subText</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>Opening hours</item>
+        <item>Location and Mailing Address</item>
+        <item>Key Card</item>
+        <item>Wifi Password</item>
+        <item>Phones</item>
+        <item>Security</item>
+    </string-array>
+
+    <string name="shortguide">Here\'s short guide on how to make the most out of the space</string>
+
+    <string-array name="elements_hour">
+        <item>Monday to Friday 8:30AM to 6PM"\n\n"We take weekends and evenings off,but you don"'"t have to if you have access to out 24/7 membership.</item>
+    </string-array>
+    <string-array name="elements_Address">
+        <item>Our Collingwood is located in the creative hub of Melbourne,amongst local artists,cafes,restaurants,bars and only a few minutes walk from Collingwood train station and the Smith Street trams."\n\n"36-38 Gipps Street,Collingwood VIC 3066 Australia"\n\n"Please make sure to provide your business name when you use The Commons as your business address."\n\n"Address:Your Name/Company Name"\n"The Commons"\n"36-38 Gipps Street Collingwood"\n"VIC 3066</item>
+    </string-array>
+    <string-array name="elements_keyCard">
+        <item>"Your key card is your key to the building after-hours\nOur doors are self-locking after 6pm and remain so until 8:30 Monday-Friday.If you lose or misplace your key card,please let use know as soon as possible.Replacement keys and passes are available for a fee.\n\nReplacement Fees:\n $50 Office Keys\n$50 Key Pass"</item>
+    </string-array>
+    <string-array name="elements_wifiPassword">
+        <item>"Network:The Commons\nPassword:happydays"</item>
+    </string-array>
+    <string-array name="elements_phone">
+        <item>"We have data points connected to all offices and desks.If you have a voip pphone it's as simple as plugging it in."</item>
+    </string-array>
+    <string-array name="elements_security">
+        <item>"Our doors are self-locking after 6pm.Anyone needing access after-hours and on weekends will need a pass.If you witness an incident that requires police attention,please dial 000.We also ask that you keep your guests with you at all times during non-business hours.\n\nFor the safety of all our members and guests,the Commons is equipped with motion sensing video cameras both inside and along the outside of the building.A security company monitos these cameras after hours and will send a team to inspect the area at the first sign of suspicious behavior."</item>
+    </string-array>
+
+    <string-array name="nav_drawer_contacts">
+        <item>Emergency Number</item>
+        <item>IT Support</item>
+    </string-array>
+
+    <string-array name="elements_EmergencyNumber">
+        <item>"\nIn case of a fire,please follow the exit signs for immedicate evacuation.For medical or police emergencies,dial 000.\n\nFor all non-emergencies,please contact a staff member with your needs.\n"</item>
+    </string-array>
+    <string-array name="elements_itSupport">
+        <item>"A membership to The Commons also includes a dedicated IT department who can help you trobleshoot all your needs.They can even help you with server storage and office infrastructure.\nAs partof the commons experience,we supply a secure network that's backed by a 100Mbit(1Gbit) fiber optic internet connection.\nThe Commons prides itself on secure network with enterprise firewalls,deep packet inspection assured that your next idea will be safe from peeping toms. Talk to out IT dept if you're needing any speial requrements or VPN services.\n\nAdditional fees may apply for certain requests.\n"</item>
+    </string-array>
+
+    <string-array name="nav_drawer_activities">
+        <item>Wellness Program</item>
+        <item>Our Social Media</item>
+    </string-array>
+
+    <string-array name="elements_Wellness">
+        <item>"\nWe're thrilled to offer weekly yoga and meditation classes that we encourage all members to take advantage of.They're a fun and healthy break from work.Apples are always availale in the upstars kichen for a nutritious snack.\n"</item>
+    </string-array>
+
+    <string-array name="elements_OurSocialMedia">
+        <item>"\nFollow us on\n\ninstagram@thecommons.io\nfacebook@thecommons.io\ntwitter@thecommons\n"</item>
+    </string-array>
+
+    <string-array name="nav_drawer_usingTheSpace">
+        <item>Meeting Rooms</item>
+        <item>Kitchen</item>
+        <item>Printing</item>
+        <item>"Beer/Cider"</item>
+        <item>Bike Storage</item>
+        <item>Outdoor</item>
+        <item>Moveout</item>
+    </string-array>
+
+    <string-array name="elements_meetingRoom">
+        <item>"\nAll members are eligible to book any of out meeing rooms for tow-hour intervals. We are also happy to provide complimentary coffee and tea service to your meetings.Romms are equipped with Apple TV's and to get connected."</item>
+    </string-array>
+
+    <string-array name="elements_kitchen">
+        <item>"\nEach of our three kitchens are fully stocked with complimentary beverages,coffee,tea,filtered and sparking water,beer and cider.Apples are always available in the upstars kichen.Members may also use the fridges.All unmarked pershable foods will be disposed of on Fridays.so be sure to label your food with your name and a date.\n"</item>
+    </string-array>
+
+    <string-array name="elements_printing">
+        <item>"\nA membership to The Commons includes unlimited printing and scanning capabilities. Just another way we'd like to take care of your needs so you can focus on your ideas.\n"</item>
+    </string-array>
+
+    <string-array name="elements_Beer">
+        <item>"\nBeer and cider are available for all members.We ask that you stay mindful that this amenity is here for members and clients only. Join us for after work drinks every Friday.\n"</item>
+    </string-array>
+    <string-array name="elements_Bike">
+        <item>"\nWe have bike racks available for all members in the communal space.For your convernience,there are lockers by the studio to store your personal belongings.Please make sure to bring your own padlock.Start your day off right and ride your bike to work ,we've goot showers for you to use once you're here.\n"</item>
+    </string-array>
+    <string-array name="elements_outDoor">
+        <item>"\nFeel free to relax in out darden and take advantage of the upstairs bbq the deck.\n"</item>
+    </string-array>
+    <string-array name="elements_moveOut">
+        <item>"\nWe'd hate to see you go,but if you must.please fill out The Commons exit form and give us 30 days notice to terminate your membership.\n"</item>
+    </string-array>
+
+    <string-array name="nav_drawer_yourSpace">
+        <item>Select your space</item>
+    </string-array>
+
+    <string-array name="elements_type">
+        <item>"Collingwood"</item>
+        <item>"South Melbourne"</item>
+    </string-array>
+
+    <string-array name="branches_type">
+        <item>The Commons (Collingwood)</item>
+        <item>The Commons (South Melbourne)</item>
+    </string-array>
+
+    <string name="title_hint"><font size="14">Title</font></string>
+    <string name="description_hint"><font size="14">Description</font></string>
+</resources>

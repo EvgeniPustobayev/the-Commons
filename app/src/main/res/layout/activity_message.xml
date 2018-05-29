@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context="anterior.com.thecommon.MessageDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#161617"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:text="Message"
+            android:gravity="center"
+            fontPath="fonts/raleway/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_back_arrow"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.stfalcon.chatkit.messages.MessagesList
+            android:id="@+id/messagesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/input"
+            app:outcomingDefaultBubbleColor="#b9d9ff"
+            app:incomingDefaultBubbleColor="#e6e6ec"
+            app:outcomingTextColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/input"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#e8e8e8"/>
+
+        <com.stfalcon.chatkit.messages.MessageInput
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:inputHint="Type a message…"
+            app:showAttachmentButton="false"/>
+    </RelativeLayout>
+</LinearLayout>

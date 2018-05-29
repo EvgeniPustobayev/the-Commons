@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundbackground"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/img_photo"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commons Networking Session"
+            android:textColor="#747474"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:lines="2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="#e5e5e5"
+        android:layout_width="2dp"
+        android:layout_height="match_parent">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#747474"
+            android:id="@+id/tvDay"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JAN"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#747474"
+            android:id="@+id/tvMonth"
+            />
+    </LinearLayout>
+
+</LinearLayout>

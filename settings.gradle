@@ -1,0 +1,4 @@
+include ':app', ':DateTimePicker', ':weekview', ':calendar'
+project(':DateTimePicker').projectDir = new File('slideDateTimePicker')
+project(':weekview').projectDir = new File('weekviewlibrary')
+project(':calendar').projectDir = new File('calendarlibrary')

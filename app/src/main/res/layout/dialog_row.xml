@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/roundbackground"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <Button
+
+        android:id="@+id/btn_phone_Contacts"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="#3434ef"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Phone Contacts"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textColor="#3434ef"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_commons_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="The Commons Contacts"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textColor="#3434ef"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        />
+</LinearLayout>

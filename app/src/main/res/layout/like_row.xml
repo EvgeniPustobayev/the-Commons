@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingRight="13dp"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.loopj.android.image.SmartImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_photo"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Andrea Kim"
+            android:textSize="16dp"
+            android:textColor="#404040"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Andrea Kim"
+            android:textSize="14dp"
+            android:textColor="#919191"
+            />
+    </LinearLayout>
+</LinearLayout>

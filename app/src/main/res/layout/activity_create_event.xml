@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context="anterior.com.thecommon.EditProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#161617"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:text="Create Event"
+            android:gravity="center"
+            fontPath="fonts/raleway/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_back_arrow"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textColor="#747474"
+                android:textSize="13sp"
+                fontPath="fonts/roboto/Roboto-Medium.ttf"
+                tools:ignore="MissingPrefix"
+                />
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Event Title"
+                android:paddingLeft="0dp"
+                android:textColorHint="#d3d3d3"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <LinearLayout
+                android:background="@drawable/round_location_button"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_calender"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mon, Jul 11, 2017 "
+                            android:textSize="16sp"
+                            android:textColor="#333333"
+                            android:layout_marginLeft="25dp"
+                            />
+                        <TextView
+                            android:id="@+id/txtTime"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mos Eisley, Tatooine"
+                            android:textSize="14sp"
+                            android:textColor="#bbbbbb"
+                            android:layout_marginLeft="25dp"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:id="@+id/btnDate"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="25dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_location_button"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_location"
+                        />
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurant Mos Eisley"
+                            android:textSize="16sp"
+                            android:textColor="#333333"
+                            android:layout_marginLeft="25dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLocationPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginLeft="33dp"
+                android:background="@drawable/round_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_cam"
+                    />
+                <Button
+                    android:id="@+id/btn_UploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:background="@android:color/transparent"
+                    android:text="Upload an image"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    fontPath="fonts/raleway/Raleway-Bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#d4b49d"
+                android:textSize="13sp"
+                fontPath="fonts/roboto/Roboto-Medium.ttf"
+                tools:ignore="MissingPrefix"
+                />
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="It was a humorously perilous business for bot"
+                android:textColor="#000000"
+                fontPath="fonts/roboto/Roboto-regular.ttf"
+                tools:ignore="MissingPrefix"
+                />
+            <LinearLayout
+                android:layout_marginTop="19dp"
+                android:background="#e5e5e5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_Submit"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_black"
+                android:text="Submit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                fontPath="fonts/raleway/Raleway-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/roundbackground"
+    android:elevation="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/avatar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="10.5dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:textColor="#333333"
+        android:textSize="16dp"
+        android:text="Dane Croft" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername"
+        android:layout_below="@+id/txtUsername"
+        android:textColor="@color/appgraycolor"
+        android:textSize="10dp"
+        android:text="The commons" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appgraycolor"
+        android:textSize="10dp"
+        android:text="10:24 pm"
+        android:layout_marginRight="16dp"
+        android:layout_alignBaseline="@+id/txtTitle"
+        android:layout_alignBottom="@+id/txtTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtTime"
+        android:layout_toLeftOf="@+id/txtTime"
+        android:layout_toStartOf="@+id/txtTime"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8.5dp"
+        app:srcCompat="@drawable/time" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="152dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/avatar"
+        android:layout_alignLeft="@+id/avatar"
+        android:layout_alignStart="@+id/avatar"
+        android:layout_alignRight="@+id/txtTime"
+        android:layout_alignEnd="@+id/txtTime"
+        app:riv_corner_radius="3dip"
+        app:riv_mutate_background="true"
+
+        />
+
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgDetail"
+        android:layout_alignLeft="@+id/avatar"
+        android:layout_alignStart="@+id/avatar"
+        android:layout_alignRight="@+id/txtTime"
+        android:layout_alignEnd="@+id/txtTime"
+        android:maxLines="20"
+        android:textColor="#bbbbbb"
+        android:textSize="14dp"
+        android:text="This is a sample message that crosses over in two lines and goes on for a while.This is a sample message that crosses over in two lines and goes on for a while." />
+
+    <LinearLayout
+        android:id="@+id/splitline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/imgDetail"
+        android:layout_alignRight="@+id/imgDetail"
+        android:layout_below="@+id/txtContent"
+        android:layout_marginTop="14.5dp"
+        android:background="#e5e5e5"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgDetail"
+        android:layout_alignRight="@+id/imgDetail"
+        android:layout_below="@+id/splitline"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/like"
+            android:scaleType="center"
+            android:id="@+id/imglike"/>
+
+        <TextView
+            android:id="@+id/txtlikes"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/imglike"
+            android:layout_alignTop="@+id/imglike"
+            android:textColor="#bbbbbb"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="12" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="center"
+            android:src="@drawable/comments"
+            android:layout_marginLeft="112dp"
+            android:id="@+id/imgcomment"/>
+        <TextView
+            android:id="@+id/txtcomment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/imgcomment"
+            android:layout_alignTop="@+id/imgcomment"
+
+            android:textColor="#bbbbbb"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="12" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imgcomment"
+            android:layout_marginRight="16dp"
+            android:textColor="#bbbbbb"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="South Melbourne" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="center"
+            android:src="@drawable/img_location"
+            android:layout_toLeftOf="@+id/txtlocation"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

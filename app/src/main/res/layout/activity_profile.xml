@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context="anterior.com.thecommon.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#161617"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:text="Profile"
+            android:gravity="center"
+            fontPath="fonts/raleway/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_back_arrow"
+            android:layout_centerVertical="true"
+            />
+        <ImageButton
+            android:id="@+id/btn_Request"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_request4"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#D4b49d"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="37dp"
+                    android:id="@+id/img_photo"
+                    android:layout_centerInParent="true" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="21dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvFullname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mark Hoffman"
+                        android:textSize="17.5sp"
+                        android:textColor="#333333"
+                        />
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mark Hoffman"
+                        android:textSize="14sp"
+                        android:textColor="#747474"
+                        />
+                    <TextView
+                        android:id="@+id/tvCompany"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mark Hoffman"
+                        android:textSize="14sp"
+                        android:textColor="#747474"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/round_black"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="18dp"
+                fontPath="fonts/raleway/Raleway-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PH:"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:text="0433 555 675"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#979797"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E:"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:text="mark.hoffman@antelope.com"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:elevation="3dp"
+            android:background="#d5e8de"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Description"
+                fontPath="fonts/raleway/Raleway-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                />
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#747474"
+                android:text="Of the grand order of folio leviathans, the Sperm Whale and the Right Whale are by far the most noteworthy. They are the only whales regularly hunted by man. To the Nantucketer, they present the two extremes of all the known varieties of the whale."
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/btn_Logout"
+            android:background="@drawable/round_upload_image"
+            android:textColor="#000000"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            fontPath="fonts/raleway/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            />
+    </LinearLayout>
+
+</LinearLayout>

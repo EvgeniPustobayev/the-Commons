@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="anterior.com.thecommon.RoomActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#161617"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:text="Rooms"
+            android:gravity="center"
+            fontPath="fonts/raleway/Raleway-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_back_arrow"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/btn_myBooking"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="My Bookings"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_myCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_btn_calendar"
+            android:text="My Calendar"
+            android:textAllCaps="false"
+            />
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:layout_centerHorizontal="true"
+                android:id="@+id/donut_progress"
+                android:layout_width="300dp"
+                android:layout_height="300dp"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Remaining"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_centerInParent="true"
+                android:paddingTop="80dp"
+                />
+            />
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bookRoom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_black"
+            android:text="Book A Room"
+            android:textAllCaps="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="1 credit is equal to 15 minutes of time in a meeting room."
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

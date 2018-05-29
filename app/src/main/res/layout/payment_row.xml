@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Payment"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$120"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            fontPath="fonts/roboto/Roboto-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02/04/2016"
+            android:gravity="end"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
